@@ -52,7 +52,7 @@ body {
 
   background-color:rgb(125, 203, 235);
   color:black;
-  width:14vw;
+  width:fit-content;
   top: 3%;
   right: 16%;
   position:absolute;

@@ -23,7 +23,13 @@ $( function() {
     drag: function() {
       counts[ 1 ]++;
       updateCounterStatus( $drag_counter, counts[ 1 ] );
-      $("#wowBalance").text(counts[1]+counts[2]+" Wows, keep going!")
+      if(counts[1]+counts[2] < 500)
+      {
+        $("#wowBalance").text(counts[1]+counts[2]+" Wows ... not much great.");
+      }
+      else{
+        $("#wowBalance").text(counts[1]+counts[2]+" Wows ... much awesome!");
+      }
       },
     stop: function() {
       counts[ 2 ]++;
